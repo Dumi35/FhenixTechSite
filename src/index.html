@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fhenix Africa Tech Camp</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="/dist/output.css" href="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <style>
+        .custom-shape-divider-bottom-1692193390 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1692193390 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .custom-shape-divider-bottom-1692193390 .shape-fill {
+        fill: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body class="bg-[#242038]">
+    <!-- navigation bar -->
+
+    <header class="sticky top-0 z-50">
+        <nav class="bg-white shadow-sm">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center  px-2">
+                                <img src="../assets/img/logo.png" alt="Logo" class="w-[80px] h-[80px] mr-2">
+                                
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="" class="pt-2 pb-1 px-2 text-[#FA6804] border-b-4 border-[#FA6804] font-semibold font-[Montserrat]">Home</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">Services</a>
+                            <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">About</a>
+                            <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">Contact Us</a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300 font-[Montserrat]">Log In</a>
+                        <a href="signIn.html" class="py-2 px-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">Sign Up</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-[#016DC5] "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-[#FA6804] font-semibold font-[Montserrat]">Home</a></li>
+                    <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">Services</a></li>
+                    <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">About</a></li>
+                    <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+   
+    <!-- hero-section -->
+    <section id="hero-section" class="hero-section min-h-[100%] sm:w-[90%] grid lg:grid-cols-2 items-center justify-center md:px-8 gap-4 bg-white mx-auto sm:my-8 sm:rounded-3xl">
+        <div class="animate__animated flex flex-col items-start ps-4 flex-1 sm:basis-full md:basis-1/2 lg:basis-2/5 left">
+            <h1 class="font-[Montserrat] md:text-5xl text-4xl my-4 font-bold text-[#242038]">Unlock Creativity and Innovation<br><span class="text-[rgb(1,109,197)]">at our Kids' Tech Camp!</span></h1>
+            <p class="font-['Noto_Sans'] sm:text-lg text-[#111]">Empower your child's future with exciting hands-on experiences in technology, coding, robotics, and more.              
+
+            </p>
+           
+            <div class="flex gap-26 mt-4 font-[Montserrat]">
+                <div class="flex flex-col">
+                    <h1 class="text-[#FA6804] font-bold font-[Montserrat] text-3xl">1K</h1>
+                    <p>students</p>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-[#FA6804]  font-bold font-[Montserrat] text-3xl">300</h1>
+                    <p>certificates</p>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-[#FA6804]  font-bold font-[Montserrat] text-3xl">2K</h1>
+                    <p>followers</p>
+                </div>
+                
+               
+            </div>
+        </div>
+        <div class=" justify-center flex items-center">
+            <img src="../assets/img/hero/heroImg.png" alt="" srcset="" class="w-[100%] h-[100%] object-cover max-w-[500px] max-h-[500px]">
+            
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="px-8 py-12 min-h-[70vh] bg-white">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+            <div class="text-white flex flex-col bg-[#FA6804] px-8 py-12 items-center justify-center animate__animated animate__fadeInUp">
+                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Online Classes</h1>
+                <div class="bg-[white] w-[100px] h-[3px]"></div>
+                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+            </div>
+            <div class="text-white flex flex-col bg-[#016DC5] px-8 py-12 items-center justify-center animate__animated animate__fadeInDown">
+                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Camps for Kids</h1>
+                <div class="bg-[white] w-[100px] h-[3px]"></div>
+                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+            </div>
+            <div class="text-white flex flex-col bg-[#242038] px-8 py-12 items-center justify-center animate__animated animate__fadeInUp">
+                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Activities</h1>
+                <div class="bg-[white] w-[100px] h-[3px]"></div>
+                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+            </div>
+            <div class="text-white flex flex-col bg-[#FA6804] px-8 py-12 items-center justify-center animate__animated animate__fadeInDown">
+                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Strategy</h1>
+                <div class="bg-[white] w-[100px] h-[3px]"></div>
+                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- about get to know us -->
+    <section id="about" class="bg-[url(../assets/img/about/img1.jpg)] w-[100%] min-h-[90vh] bg-cover flex lg:justify-end justify-center items-center lg:p-12">
+        <div class="bg-white lg:w-[50%] w-[90%] rounded-xl flex flex-col lg:px-8 lg:py-8 animate__animated right">
+            <h1 class="text-[#016DC5] font-bold font-[Montserrat] mt-8 md:text-5xl text-4xl">
+                Get To Know Us
+            </h1>
+            <p class="font-['Noto_Sans'] sm:text-lg my-8">
+                Fhenix Africa is a dynamic tech startup based in Akwa Ibom, Nigeria, that focuses on providing innovative digital training. 
+                <br> <br>
+                The company was founded in 2020 by a group of ambitious entrepreneurs with a shared vision of leveraging technology to drive positive change and economic growth in Africa.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Tracks -->
+    <section class="lg:px-20 bg-[#f4f4f4] flex flex-col py-8 relative">
+        <h1 class="font-[Montserrat] text-[#242038] text-center font-bold md:text-5xl text-4xl ">Our Tracks</h1>
+
+
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 my-4 gap-8 md:mt-20 ">
+            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+                <img src="../assets/img/tracks/Ellipse.png" alt="" srcset="" class="absolute w-[200px] h-[200px] z-0 -left-20 top-[-90px] sm:block hidden">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Web development</h1>
+                    <p class="font-[Montserrat] text-sm"> Craft dynamic and visually appealing online experiences, combining coding languages like HTML, CSS, and JavaScript to create interactive websites that cater to diverse user needs.</p></p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Mobile development</h1>
+                    <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
+                </div>
+            </div>
+            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Python Programming</h1>
+                    <p class="font-[Montserrat] text-sm"> leverages the versatile Python language to build a wide range of software solutions, from web applications and data analysis tools to artificial intelligence systems, thanks to its simplicity and powerful libraries.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Scratch Animation</h1>
+                    <p class="font-[Montserrat] text-sm"> Using Scratch, an aspiring animator brings stories to life through colorful characters and imaginative worlds, learning the basics of coding logic while creating captivating animations in an intuitive visual environment.</p>
+                </div>
+            </div>
+            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Robotics</h1>
+                    <p class="font-[Montserrat] text-sm"> Dive into the world of automation, designing and programming intelligent machines that can perform tasks autonomously, merging fields like mechanical engineering and computer science.</p>
+                </div>
+            </div>
+            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Data Science</h1>
+                    <p class="font-[Montserrat] text-sm"> Craft dynamic and visually appealing online experiences, combining coding languages like HTML, CSS, and JavaScript to create interactive websites that cater to diverse user needs.</p></p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <img src="../assets/img/tracks/Pattern.png" alt="" srcset="" class="w-[100px] h-[100px] absolute right-10 -bottom-5">
+
+        
+    </section>
+
+    <section class="bg-[#FA6804] w-[100%] min-h-[20vh] my-4 flex items-center justify-center py-8">
+        <div class="grid grid-cols-2 items-center justify-center gap-40">
+            <div class="flex flex-col items-center">
+                <img src="../assets/img/icons/certificate.png" alt="" srcset="" class="w-[100px] h-[100px] animate__animated animate__bounce animate__infinite infinite animate__slow">
+                <p class="text-white text-center font-[Montserrat]">Online Certificates</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="../assets/img/icons/class.png" alt="" srcset="" class="w-[100px] h-[100px] animate__animated animate__bounce animate__infinite infinite animate__slow">
+                <p class="text-white text-center font-[Montserrat]">Expert Trainers</p>
+            </div>
+            <!-- <div class="flex flex-col items-center">
+                <img src="../assets/img/icons/certificate.png" alt="" srcset="" class="w-[100px] h-[100px]">
+                <p class="text-white text-center font-[Montserrat]">Online Certificates</p>
+            </div> -->
+            
+        </div>
+        <!-- find out other design elements and principles, summarise -->
+    </section>
+
+    <!-- Team -->
+    <section>
+        <div class="grid lg:grid-cols-4">
+
+        </div>
+    </section>
+
+    <!-- Feedback from Parents -->
+
+    <section id="feedback" class="min-h-[100vh] p-8 relative custom-shape-divider-bottom-1692193129">
+        
+        <div class="custom-shape-divider-bottom-1692193390">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+
+        <h1 class="text-center text-[#016DC5] text-5xl font-bold font-[Montserrat]">
+            Feedback from Parents
+        </h1>
+        <p class="text-center text-white font-['Noto_Sans'] text-lg">
+            Here’s what our students’ parents have to say
+        </p>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-center justify-center">
+
+            <div class="circular-slider flex-center">
+                <div class="wrapper flex-center">
+                    <li class="slides" style="--img-no:1;"><img src="../assets/img/tracks/frontend-development-tools.png" alt=""></li>
+                    <li class="slides" style="--img-no:2;"><img src="../assets/img/tracks/frontend-development-tools.png" alt=""></li>
+                    <li class="slides" style="--img-no:3"><img src="../assets/img/tracks/frontend-development-tools.png"alt=""></li>
+                    <li class="slides" style="--img-no:4"><img src="../assets/img/tracks/frontend-development-tools.png"alt=""></li>
+                    <li class="slides" style="--img-no:5"><img src="../assets/img/tracks/frontend-development-tools.png" alt=""></li>
+                </div>
+            </div>
+
+            <div class="bg-white [50%] rounded-xl flex flex-col px-8 py-8 solute righ mt-20">
+           
+                <p class="font-['Noto_Sans'] text-lg my-8">
+                    Fhenix Africa is a dynamic tech startup based in Akwa Ibom, Nigeria, that focuses on providing innovative digital training. 
+                    <br> <br>
+                    The company was founded in 2020 by a group of ambitious entrepreneurs with a shared vision of leveraging technology to drive positive change and economic growth in Africa.
+                </p>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+
+    <section class="bg-white w-[100%] min-h-[90vh] py-8" id="contact">
+       
+        <h1 class="font-[Montserrat] text-[#FA6804] text-center font-bold md:text-5xl text-4xl">Contact Us</h1>
+        <div class="grid md:grid-cols-2 bg-[#242038] rounded-3xl w-[90%] mx-auto my-12 p-8 items-center">
+           <div class="flex flex-col gap-8 p-4">
+                <div id="address">
+                    <img src="../assets/img/icons/location.png" alt="" srcset="" class="w-[30px] h-[35px] object-cover">
+                    <p class="font-[Montserrat] text-white font-bold">27B Gracebill Road, Eket, Akwa Ibom State, Nigeria</p>
+                </div>
+                <div id="phone">
+                    <img src="../assets/img/icons/phone.png" alt="" srcset="" class="w-[30px] h-[30px] object-cover">
+                    <p class="font-[Montserrat] text-white font-bold">+234 8799 932 920</p>
+                </div>
+                <div id="mail">
+                    <img src="../assets/img/icons/mail.png" alt="" srcset="" class="w-[30px] h-[30px] object-cover">
+                    <p class="font-[Montserrat] text-white font-bold">info@fhenixafrica.com</p>
+                </div>
+                
+           </div>
+
+           <div class="p-4">
+            <form action="" class="flex flex-col font-[Montserrat] gap-8">
+                <div class="flex flex-col">
+                    <label for="name" class="text-white">Name</label>
+                    <input type="text" placeholder="Name" class="rounded-sm p-2">
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="text-white">Email</label>
+                    <input type="email" placeholder="Email" class="rounded-sm p-2">
+                </div>
+                <div class="flex flex-col">
+                    <label for="phone" class="text-white">Phone Number</label>
+                <input type="text" placeholder="Phone Number" class="rounded-sm p-2">
+                </div>
+                <div class="flex flex-col">
+                    <textarea name="message" id="" cols="5" rows="5" placeholder="Message"></textarea>
+                </div>
+            </form>
+           </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="index.js"></script>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+    
+</body>
+</html>

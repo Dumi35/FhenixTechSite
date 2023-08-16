@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fhenix Africa Tech Camp</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="/dist/output.css" href="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="signIn.css">
+</head>
+<body class="bg-[#242038] font-[Montserrat]">
+    <header class="sticky top-0 z-50">
+        <nav class="bg-white shadow-sm">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center  px-2">
+                                <img src="../assets/img/logo.png" alt="Logo" class="w-[80px] h-[80px] mr-2">
+                                
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="pt-2 pb-1 px-2 text-[#FA6804] border-b-4 border-[#FA6804] font-semibold font-[Montserrat]">Home</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">Services</a>
+                            <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">About</a>
+                            <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">Contact Us</a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300 font-[Montserrat]">Log In</a>
+                        <a href="signIn.html" class="py-2 px-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">Sign Up</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-[#016DC5] "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-[#FA6804] font-semibold font-[Montserrat]">Home</a></li>
+                    <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">Services</a></li>
+                    <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">About</a></li>
+                    <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-[#016DC5] transition duration-300 font-[Montserrat]">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    
+    <main class="flex items-center m-8">
+        <div class="hidden lg:flex">
+            <img src="../assets/img/ebc51172c30ad05d9ffeb62a54a9d568.jpg" alt="cute snowman" class="max-h-[500px] object-cover">
+        </div>
+        <form action="" class="bg-white flex flex-col">
+            <h1>Sign in to Weather</h1>
+            <div class="icons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>or use your email account</p>
+            <input type="email" name="" id="email" placeholder="Email" required>
+            <input type="password" name="" id="password" placeholder="Password" required>
+            <p class="forgot">
+                Forgot your password?
+            </p>
+            <button id="signIn" class="bg-[#FA6804]">Sign In</button>
+        </form>
+    </main>
+
+    <script>
+        const email = document.getElementById("email")
+        const password = document.getElementById("password")
+        const button = document.querySelector("button")
+
+        button.addEventListener("click", e=>{
+            const obj={
+                email:email.value,
+                password:password.value
+            }
+            //http://127.0.0.1:4000
+            fetch("http://localhost:3000/sign-up",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(obj)
+            })
+
+        })
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</body>
+</html>
