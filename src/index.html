@@ -17,31 +17,18 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="../assets/css/index.css">
-  <style>
-        .custom-shape-divider-bottom-1692193390 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
 
-    .custom-shape-divider-bottom-1692193390 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 150px;
-    }
-
-    .custom-shape-divider-bottom-1692193390 .shape-fill {
-        fill: #FFFFFF;
+  <style type="text/tailwindcss">
+    :root{
+        --orange: #FA6804;
+        --purple: #242038;
+        --blue:  #016DC5;
     }
   </style>
+  
 </head>
 
-<body class="bg-[#242038]">
+<body class="bg-[color:var(--purple)]">
     <!-- navigation bar -->
 
     <header class="sticky top-0 z-50">
@@ -174,32 +161,69 @@
     </section>
     
     <!-- Tracks -->
-    <section class="lg:px-20 bg-[#f4f4f4] flex flex-col py-8 relative">
+    <section class="bg-[#f4f4f4] flex flex-col py-8 relative">
         <h1 class="font-[Montserrat] text-[#242038] text-center font-bold md:text-5xl text-4xl ">Our Tracks</h1>
 
-
-        <div class="grid lg:grid-cols-3 sm:grid-cols-2 my-4 gap-8 md:mt-20 ">
-            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+        <!-- Modal -->
+        <div id="modal" data-te-modal-init
+   class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none bg-gray-500 bg-opacity-50 flex justify-center "
+   id="exampleModalLong"
+   tabindex="-1"
+   aria-labelledby="exampleModalLongLabel"
+   aria-hidden="true">
+       <div class="bg-white p-4 shadow-md flex flex-col  items-center w-[70vw] overflow-y-auto rounded-xl">
+            <h1 class="font-bold text-center font-[Montserrat] text-3xl ">Robotics</h1>
+            <p class="my-4 hidden lg:block font-[Montserrat]">Welcome to the exciting world of robotics at the Aceplora TechCamp! From wiring circuits to coding the instructions that make your robots move, you will bring your imagination to life and create robots capable of performing amazing tasks. Using cutting-edge hardware and software, you’ll learn how to program sensors, motors, and other components to create robots that can navigate mazes, run errands, automate household appliances, perform complex tasks, and even battle other robots in thrilling competitions. Join us and discover the endless possibilities of robotics!</p>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+                <div class="text-white flex flex-col bg-[#FA6804] px-8 py-4 items-center rounded-lg">
+                    <h1 class="font-[Montserrat] font-bold text-center text-xl">Online Classes</h1>
+                    <div class="bg-[white] w-[100px] h-[3px]"></div>
+                    <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+                </div>
+                <div class="text-white flex flex-col bg-[#FA6804] px-8 py-4 items-center rounded-lg">
+                    <h1 class="font-[Montserrat] font-bold text-center text-xl">Online Classes</h1>
+                    <div class="bg-[white] w-[100px] h-[3px]"></div>
+                    <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+                </div>
+                <div class="text-white flex flex-col bg-[#FA6804] px-8 py-4 items-center rounded-lg">
+                    <h1 class="font-[Montserrat] font-bold text-center text-xl">Online Classes</h1>
+                    <div class="bg-[white] w-[100px] h-[3px]"></div>
+                    <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
+                </div>
+                
+            
+                
+            </div>
+            <div>
+                <button id="closeModal" class="mt-4 bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600">Close</button>
+                <button id="Register" class="mt-4 bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600">Register</button>
+            </div>
+       </div>
+        </div>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 my-4 gap-8 md:mt-20 px-8">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
                 <img src="../assets/img/tracks/Ellipse.png" alt="" srcset="" class="absolute w-[200px] h-[200px] z-0 -left-20 top-[-90px] sm:block hidden">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
-                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                    <img src="../assets/img/tracks/webDev.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Web development</h1>
                     <p class="font-[Montserrat] text-sm"> Craft dynamic and visually appealing online experiences, combining coding languages like HTML, CSS, and JavaScript to create interactive websites that cater to diverse user needs.</p></p>
+                    <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
+ 
                 </div>
             </div>
             
-            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
-                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                    <img src="../assets/img/tracks/appDev.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Mobile development</h1>
                     <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
                 </div>
             </div>
-            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[700px]">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
                     <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
@@ -209,7 +233,7 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[700px]">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
                     <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
@@ -218,18 +242,18 @@
                     <p class="font-[Montserrat] text-sm"> Using Scratch, an aspiring animator brings stories to life through colorful characters and imaginative worlds, learning the basics of coding logic while creating captivating animations in an intuitive visual environment.</p>
                 </div>
             </div>
-            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
-                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                    <img src="../assets/img/tracks/robotics.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Robotics</h1>
                     <p class="font-[Montserrat] text-sm"> Dive into the world of automation, designing and programming intelligent machines that can perform tasks autonomously, merging fields like mechanical engineering and computer science.</p>
                 </div>
             </div>
-            <div class="flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
-                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                    <img src="../assets/img/tracks/dataScience.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Data Science</h1>
@@ -245,14 +269,14 @@
         
     </section>
 
-    <section class="bg-[#FA6804] w-[100%] min-h-[20vh] my-4 flex items-center justify-center py-8">
+    <section class="bg-[#FA6804] w-[100%] min-h-[10vh] my-4 flex items-center justify-center ">
         <div class="grid grid-cols-2 items-center justify-center gap-40">
             <div class="flex flex-col items-center">
-                <img src="../assets/img/icons/certificate.png" alt="" srcset="" class="w-[100px] h-[100px] animate__animated animate__bounce animate__infinite infinite animate__slow">
+                <img src="../assets/img/icons/certificate.png" alt="" srcset="" class="max-w-[70px] max-h-[70px] animate__animated animate__bounce animate__infinite infinite animate__slow">
                 <p class="text-white text-center font-[Montserrat]">Online Certificates</p>
             </div>
             <div class="flex flex-col items-center">
-                <img src="../assets/img/icons/class.png" alt="" srcset="" class="w-[100px] h-[100px] animate__animated animate__bounce animate__infinite infinite animate__slow">
+                <img src="../assets/img/icons/class.png" alt="" srcset="" class="max-w-[70px] max-h-[70px] animate__animated animate__bounce animate__infinite infinite animate__slow">
                 <p class="text-white text-center font-[Montserrat]">Expert Trainers</p>
             </div>
             <!-- <div class="flex flex-col items-center">
@@ -275,14 +299,14 @@
 
     <section id="feedback" class="min-h-[100vh] p-8 relative custom-shape-divider-bottom-1692193129">
         
-        <div class="custom-shape-divider-bottom-1692193390">
+        <div class="custom-shape-divider-bottom-1692193390 hidden lg:block">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
         </div>
         
 
-        <h1 class="text-center text-[#016DC5] text-5xl font-bold font-[Montserrat]">
+        <h1 class="text-center text-white text-3xl md:text-5xl font-bold font-[Montserrat]">
             Feedback from Parents
         </h1>
         <p class="text-center text-white font-['Noto_Sans'] text-lg">
@@ -301,9 +325,9 @@
                 </div>
             </div>
 
-            <div class="bg-white [50%] rounded-xl flex flex-col px-8 py-8 solute righ mt-20">
+            <div class="bg-white [50%] rounded-xl flex flex-col lg:p-8 solute righ mt-20">
            
-                <p class="font-['Noto_Sans'] text-lg my-8">
+                <p class="font-['Noto_Sans'] lg:text-lg my-8">
                     Fhenix Africa is a dynamic tech startup based in Akwa Ibom, Nigeria, that focuses on providing innovative digital training. 
                     <br> <br>
                     The company was founded in 2020 by a group of ambitious entrepreneurs with a shared vision of leveraging technology to drive positive change and economic growth in Africa.
@@ -315,7 +339,7 @@
         
     </section>
 
-    <section class="bg-white w-[100%] min-h-[90vh] py-8" id="contact">
+    <section class="bg-[#f4f4f4] w-[100%] min-h-[90vh] py-8" id="contact">
        
         <h1 class="font-[Montserrat] text-[#FA6804] text-center font-bold md:text-5xl text-4xl">Contact Us</h1>
         <div class="grid md:grid-cols-2 bg-[#242038] rounded-3xl w-[90%] mx-auto my-12 p-8 items-center">
@@ -357,7 +381,17 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="bg-[color: var(--purple)] min-h-[50vh] lg:px-40 lg:py-20 p-4">
+        <div class="text-white font-[Montserrat] max-w-[500px] text-justify">
+            <h1 class="text-3xl font-bold">Fhenix Africa</h1>
+            <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque adipisci nostrum soluta repellendus nihil velit recusandae quasi ipsa, suscipit voluptatum dolore obcaecati, tenetur temporibus expedita veritatis sed perspiciatis iure laboriosam.</p>
+
+            <span class="font-bold text-lg">Follow Us:</span>
+
+            <div class="icons">
+
+            </div>
+        </div>
 
     </footer>
     
@@ -369,6 +403,18 @@
 
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
+        });
+
+        const openModalButton = document.getElementById('openModal');
+        const closeModalButton = document.getElementById('closeModal');
+        const modal = document.getElementById('modal');
+
+        openModalButton.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
         });
     </script>
     
