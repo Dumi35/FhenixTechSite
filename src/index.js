@@ -17,13 +17,3 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('#hero-section'));
 
-
-const circularSlider = document.querySelector(".wrapper")
-const slides = document.querySelectorAll(".slides")
-
- slides.forEach((slide,i) => {
-    slide.onclick=()=>{
-        circularSlider.style.transform = `rotateZ(-${360 / 5 * (i+1)}deg)`;
-        
-    }
- });

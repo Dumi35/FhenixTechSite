@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fhenix Africa Tech Camp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="icon" href="assets/img/logo.png">
     <link rel="/dist/output.css" href="stylesheet">
@@ -40,10 +41,12 @@
                     <div class="flex space-x-7">
                         <div>
                             <!-- Website Logo -->
-                            <a href="#" class="flex items-center  px-2">
-                                <img src="../assets/img/logo.png" alt="Logo" class="w-[80px] h-[80px] mr-2">
-                                
-                            </a>
+                            <div>
+                                <a href="#" class="flex items-center px-2">
+                                    <img src="../assets/img/logo.png" alt="Logo" class="max-w-[80px] max-h-[80px] mr-2">
+                                    
+                                </a>
+                            </div>
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex items-center space-x-1">
@@ -92,7 +95,7 @@
     </header>
    
     <!-- hero-section -->
-    <section id="hero-section" class="hero-section min-h-[80vh] grid lg:grid-cols-2 items-center justify-center md:px-8 gap-4 bg-white  ">
+    <section id="hero-section" class="hero-section min-h-[74vh] grid lg:grid-cols-2 items-center justify-center md:px-8 gap-4 bg-white xl:px-20">
         <div class="animate__animated flex flex-col items-start ps-4 flex-1 sm:basis-full md:basis-1/2 lg:basis-2/5 left">
             <h1 class="font-[Montserrat] md:text-5xl text-4xl my-4 font-bold text-[#242038]">Unlock Creativity and Innovation<br><span class="text-[rgb(1,109,197)]">at our Kids' Tech Camp!</span></h1>
             <p class="font-['Noto_Sans'] sm:text-lg text-[#111]">Empower your child's future with exciting hands-on experiences in technology, coding, robotics, and more.              
@@ -103,7 +106,7 @@
             </div>
         </div>
         <div class=" justify-center flex items-center">
-            <img src="../assets/img/hero/heroImg.png" alt="" srcset="" class="w-[100%] h-[100%] object-cover max-w-[500px] max-h-[500px]">
+            <img src="../assets/img/hero/heroImg.png" alt="" srcset="" class="w-[100%] h-[100%] object-cover md:max-w-[500px] md:max-h-[500px] lg:max-w-[700px] lg:max-h-[700px]">
             
         </div>
 
@@ -113,7 +116,7 @@
     
     <!-- about get to know us -->
     <section id="about" class="bg-[url(../assets/img/about/img1.jpg)] w-[100%] min-h-[90vh] bg-cover flex lg:justify-end justify-center items-center lg:p-12">
-        <div class="bg-white lg:w-[50%] w-[90%] rounded-xl flex flex-col lg:px-8 lg:py-8 animate__animated right">
+        <div class="bg-white lg:w-[50%] w-[90%] rounded-xl flex flex-col lg:px-8 lg:py-8 animate__animated right px-4">
             <h1 class="text-[#016DC5] font-bold font-[Montserrat] mt-8 md:text-5xl text-4xl">
                 Get To Know Us
             </h1>
@@ -165,64 +168,74 @@
             </div>
        </div>
         </div>
-        <div class="grid lg:grid-cols-3 sm:grid-cols-2 my-4 gap-8 md:mt-20 px-8">
-            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+        <!-- Grid -->
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 my-4 gap-8 md:mt-20 xl:px-32">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white">
                 <img src="../assets/img/tracks/Ellipse.png" alt="" srcset="" class="absolute w-[200px] h-[200px] z-0 -left-20 top-[-90px] sm:block hidden">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
                     <img src="../assets/img/tracks/webDev.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Web development</h1>
-                    <p class="font-[Montserrat] text-sm"> Craft dynamic and visually appealing online experiences, combining coding languages like HTML, CSS, and JavaScript to create interactive websites that cater to diverse user needs.</p></p>
+                    <p class="font-[Montserrat] text-sm"> Craft dynamic and visually appealing online experiences, combining coding languages like HTML, CSS, and JavaScript to create interactive websites that cater to diverse user needs.</p>
                     <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
  
                 </div>
             </div>
             
-            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[450px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white ">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
                     <img src="../assets/img/tracks/appDev.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Mobile development</h1>
                     <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
+                    <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
+ 
                 </div>
             </div>
-            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[700px]">
-                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
-                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
-                </div>
-                <div class="mx-4 flex flex-col">
-                    <h1 class="font-bold my-4">Python Programming</h1>
-                    <p class="font-[Montserrat] text-sm"> leverages the versatile Python language to build a wide range of software solutions, from web applications and data analysis tools to artificial intelligence systems, thanks to its simplicity and powerful libraries.
-                    </p>
-                </div>
-            </div>
-            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[700px]">
-                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
-                    <img src="../assets/img/tracks/frontend-development-tools.png" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
-                </div>
-                <div class="mx-4 flex flex-col">
-                    <h1 class="font-bold my-4">Scratch Animation</h1>
-                    <p class="font-[Montserrat] text-sm"> Using Scratch, an aspiring animator brings stories to life through colorful characters and imaginative worlds, learning the basics of coding logic while creating captivating animations in an intuitive visual environment.</p>
-                </div>
-            </div>
-            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white ">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
                     <img src="../assets/img/tracks/robotics.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Robotics</h1>
-                    <p class="font-[Montserrat] text-sm"> Dive into the world of automation, designing and programming intelligent machines that can perform tasks autonomously, merging fields like mechanical engineering and computer science.</p>
+                    <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
+                    <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
+ 
                 </div>
             </div>
-            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white max-h-[400px]">
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white ">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/appDev.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Python Programming</h1>
+                    <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
+                    <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
+ 
+                </div>
+            </div>
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white ">
+                <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
+                    <img src="../assets/img/tracks/appDev.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
+                </div>
+                <div class="mx-4 flex flex-col">
+                    <h1 class="font-bold my-4">Scratch</h1>
+                    <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
+                    <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
+ 
+                </div>
+            </div>
+            <div class="hover:scale-110 transition ease-in flex flex-col flex-wrap rounded-xl relative bg-white ">
                 <div class=" bg-white z-10 px-4 pt-4 rounded-3xl h-[50%]">
                     <img src="../assets/img/tracks/dataScience.jpg" alt="" srcset="" class="object-cover rounded-xl w-[100%] h-[100%]">
                 </div>
                 <div class="mx-4 flex flex-col">
                     <h1 class="font-bold my-4">Data Science</h1>
-                    <p class="font-[Montserrat] text-sm"> Craft dynamic and visually appealing online experiences, combining coding languages like HTML, CSS, and JavaScript to create interactive websites that cater to diverse user needs.</p></p>
+                    <p class="font-[Montserrat] text-sm"> Engineers applications for smartphones and tablets, utilizing programming languages like Java, Swift, or Kotlin to design user-friendly interfaces and deliver seamless experiences on the go</p>
+                    <button class="w-[100px] text-sm py-1 px-1 my-2 font-medium text-white bg-[#FA6804] rounded hover:bg-[#016DC5] transition duration-300 font-[Montserrat]" id="openModal">More</button>
+ 
                 </div>
             </div>
             
@@ -238,19 +251,41 @@
 
     <section id="feedback" class="min-h-[100vh] p-8 relative custom-shape-divider-bottom-1692193129 bg-[url('../assets/img/reviewBg.png')] bg-cover">
         
-        <div class="custom-shape-divider-bottom-1692193390 hidden lg:block">
+        <!-- <div class="custom-shape-divider-bottom-1692193390 hidden lg:block">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
-        </div>
+        </div> -->
         
 
         <h1 class="text-center text-[color:var(--blue)] text-3xl md:text-5xl font-bold font-[Montserrat]">
             Parents' Reviews
         </h1>
-        <p class="text-center text-[color:var(--orange)] font-['Open_Sans'] text-lg">
+        <p class="text-center text-[color:var(--orange)] font-['Montserrat'] text-lg font-bold">
             Here’s what our students’ parents have to say
         </p>
+
+        <div class="flex items-center justify-center lg:gap-20 gap-4 my-8 flex-wrap">
+            <img src="../assets/img/lady.png" alt="" class="rounded-[50%] aspect-square w-[100px] object-cover animate__animated animate__fadeInLeft">
+            <div class="rounded-md bg-white md:max-w-[50%] p-4 shadow-2xl animate__animated animate__fadeInRight">
+                
+                <p class="font-[Montserrat] font-semibold">"</p>
+                <p class="font-[Montserrat] font-semibold">Tech camp was a hit for our kid! They're buzzing with newfound 
+                    tech skills and can't stop talking about the cool projects they did. 
+                    Kudos to the patient instructors. We'll be back next year for sure!</p>
+                <p class="font-[Montserrat] font-semibold text-right">"</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center lg:gap-20 gap-4 mt-28 flex-wrap-reverse">
+            <div class="rounded-md bg-white md:max-w-[50%] p-4 shadow-2xl animate__animated animate__fadeInLeft">
+                <p class="font-[Montserrat] font-semibold">"</p>
+                <p class="font-[Montserrat] font-semibold">Thrilled with the tech camp! Our child dove into coding and robotics,
+                    and they're beaming with pride over their creations. The instructors
+                     were top-notch. Counting down to next year's camp already!</p>
+                <p class="font-[Montserrat] font-semibold text-right">"</p>
+            </div>
+            <img src="../assets/img/lady.png" alt="" class="rounded-[50%] aspect-square w-[100px] object-cover animate__animated animate__fadeInRight">
+        </div>
 
         
             
@@ -263,8 +298,8 @@
     <section class="lg:px-30 lg:py-2 px-8 min-h-[70vh] xl:px-44">
         <h1 class="text-center text-[color:var(--blue)] text-3xl md:text-5xl font-bold font-[Montserrat] my-12 ">Meet Our Team</h1>
         <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-14 mb-20 px-8">
-            <div class="text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
-                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover w-">
+            <div class=" text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
+                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover hover:scale-110 transition ease-in">
                
                 <p class="text-center text-[color:var(--purple)] font-bold mt-4">Jane Doe</p>
                 <p class="text-center text-[color:var(--blue)] font-bold mt-4">Managing Director</p>
@@ -272,7 +307,7 @@
             </div>
            
             <div class="text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
-                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover">
+                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover hover:scale-110 transition ease-in">
                
                 <p class="text-center text-[color:var(--purple)] font-bold mt-4">Jane Doe</p>
                 <p class="text-center text-[color:var(--orange)] font-bold mt-4">Managing Director</p>
@@ -280,7 +315,7 @@
             </div>
            
             <div class="text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
-                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover">
+                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover hover:scale-110 transition ease-in">
                
                 <p class="text-center text-[color:var(--purple)] font-bold mt-4">Jane Doe</p>
                 <p class="text-center text-[color:var(--blue)] font-bold mt-4">Managing Director</p>
@@ -294,7 +329,7 @@
     </section>
 
 
-    <section class="bg-white w-[100%] min-h-[90vh] py-8" id="contact">
+   <!--  <section class="bg-white w-[100%] min-h-[90vh] py-8" id="contact">
        
         <h1 class="font-[Montserrat] text-[color:var(--blue)] text-center font-bold md:text-5xl text-4xl">Contact Us</h1>
         <div class="grid md:grid-cols-2 rounded-3xl w-[90%] mx-auto my-12 p-8 items-center">
@@ -335,7 +370,7 @@
            </div>
         </div>
     </section>
-
+ -->
     <footer class="bg-[color:var(--purple)] min-h-[50vh] lg:px-40 lg:py-20 p-4">
         <div class="text-white font-[Montserrat] max-w-[500px] text-justify">
             <h1 class="text-3xl font-bold">Fhenix Africa</h1>
@@ -350,7 +385,7 @@
 
     </footer>
     
-    <script src="https://cdn.tailwindcss.com"></script> 
+    
     <script src="index.js"></script>
     <script>
         const btn = document.querySelector("button.mobile-menu-button");
