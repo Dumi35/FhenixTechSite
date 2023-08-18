@@ -23,16 +23,18 @@
         --orange: #FA6804;
         --purple: #242038;
         --blue:  #016DC5;
+        --grey: #EEEEEE;
+        --light-orange:#FEE8D9;
     }
   </style>
   
 </head>
 
-<body class="bg-[color:var(--purple)]">
+<body class="bg-[#EEE]">
     <!-- navigation bar -->
 
     <header class="sticky top-0 z-50">
-        <nav class="bg-white shadow-sm">
+        <nav class="bg-[#eee] shadow-sm">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="flex justify-between">
                     <div class="flex space-x-7">
@@ -45,10 +47,12 @@
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex items-center space-x-1">
-                            <a href="" class="pt-2 pb-1 px-2 text-[#FA6804] border-b-4 border-[#FA6804] font-semibold font-[Montserrat]">Home</a>
-                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">Services</a>
-                            <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">About</a>
-                            <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat]">Contact Us</a>
+                            <a href="" class="pt-2 pb-1 px-2 text-[#FA6804] border-b-4 border-[#FA6804] font-semibold font-[Montserrat] text-sm lg:text-md">Home</a>
+                            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat] text-sm lg:text-md">Courses</a>
+                            <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat] text-sm lg:text-md">About</a>
+                            <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat] text-sm lg:text-md">Contact Us</a>
+                            <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-[#016DC5] transition duration-300 font-[Montserrat] text-sm lg:text-md">Sponsor a child</a>
+                           
                         </div>
                     </div>
                     <!-- Secondary Navbar items -->
@@ -88,27 +92,13 @@
     </header>
    
     <!-- hero-section -->
-    <section id="hero-section" class="hero-section min-h-[100%] sm:w-[90%] grid lg:grid-cols-2 items-center justify-center md:px-8 gap-4 bg-white mx-auto sm:my-8 sm:rounded-3xl">
+    <section id="hero-section" class="hero-section min-h-[80vh] grid lg:grid-cols-2 items-center justify-center md:px-8 gap-4 bg-white  ">
         <div class="animate__animated flex flex-col items-start ps-4 flex-1 sm:basis-full md:basis-1/2 lg:basis-2/5 left">
             <h1 class="font-[Montserrat] md:text-5xl text-4xl my-4 font-bold text-[#242038]">Unlock Creativity and Innovation<br><span class="text-[rgb(1,109,197)]">at our Kids' Tech Camp!</span></h1>
             <p class="font-['Noto_Sans'] sm:text-lg text-[#111]">Empower your child's future with exciting hands-on experiences in technology, coding, robotics, and more.              
 
             </p>
            
-            <div class="flex gap-26 mt-4 font-[Montserrat]">
-                <div class="flex flex-col">
-                    <h1 class="text-[#FA6804] font-bold font-[Montserrat] text-3xl">1K</h1>
-                    <p>students</p>
-                </div>
-                <div class="flex flex-col">
-                    <h1 class="text-[#FA6804]  font-bold font-[Montserrat] text-3xl">300</h1>
-                    <p>certificates</p>
-                </div>
-                <div class="flex flex-col">
-                    <h1 class="text-[#FA6804]  font-bold font-[Montserrat] text-3xl">2K</h1>
-                    <p>followers</p>
-                </div>
-                
                
             </div>
         </div>
@@ -120,32 +110,7 @@
     </section>
 
     <!-- Features -->
-    <section class="px-8 py-12 min-h-[70vh] bg-white">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
-            <div class="text-white flex flex-col bg-[#FA6804] px-8 py-12 items-center justify-center animate__animated animate__fadeInUp">
-                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Online Classes</h1>
-                <div class="bg-[white] w-[100px] h-[3px]"></div>
-                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
-            </div>
-            <div class="text-white flex flex-col bg-[#016DC5] px-8 py-12 items-center justify-center animate__animated animate__fadeInDown">
-                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Camps for Kids</h1>
-                <div class="bg-[white] w-[100px] h-[3px]"></div>
-                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
-            </div>
-            <div class="text-white flex flex-col bg-[#242038] px-8 py-12 items-center justify-center animate__animated animate__fadeInUp">
-                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Activities</h1>
-                <div class="bg-[white] w-[100px] h-[3px]"></div>
-                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
-            </div>
-            <div class="text-white flex flex-col bg-[#FA6804] px-8 py-12 items-center justify-center animate__animated animate__fadeInDown">
-                <h1 class="font-[Montserrat] font-bold text-center my-4 text-xl">Strategy</h1>
-                <div class="bg-[white] w-[100px] h-[3px]"></div>
-                <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim porro aut quisquam voluptatibus maxime dolorem quia, numquam sunt. Laborum perferendis dolorem sit architecto doloribus tempora, dicta totam quae ex amet?</p>
-            </div>
-            
-        </div>
-    </section>
-
+    
     <!-- about get to know us -->
     <section id="about" class="bg-[url(../assets/img/about/img1.jpg)] w-[100%] min-h-[90vh] bg-cover flex lg:justify-end justify-center items-center lg:p-12">
         <div class="bg-white lg:w-[50%] w-[90%] rounded-xl flex flex-col lg:px-8 lg:py-8 animate__animated right">
@@ -162,7 +127,7 @@
     
     <!-- Tracks -->
     <section class="bg-[#f4f4f4] flex flex-col py-8 relative">
-        <h1 class="font-[Montserrat] text-[#242038] text-center font-bold md:text-5xl text-4xl ">Our Tracks</h1>
+        <h1 class="text-center text-[color:var(--blue)] text-3xl md:text-5xl font-bold font-[Montserrat] ">Our Tracks</h1>
 
         <!-- Modal -->
         <div id="modal" data-te-modal-init
@@ -264,40 +229,14 @@
             
         </div>
 
-        <img src="../assets/img/tracks/Pattern.png" alt="" srcset="" class="w-[100px] h-[100px] absolute right-10 -bottom-5">
+        <img src="../assets/img/tracks/Pattern.png" alt="" srcset="" class="w-[100px] h-[100px] absolute right-10 -bottom-5 hidden md:block">
 
         
     </section>
 
-    <section class="bg-[#FA6804] w-[100%] min-h-[10vh] my-4 flex items-center justify-center ">
-        <div class="grid grid-cols-2 items-center justify-center gap-40">
-            <div class="flex flex-col items-center">
-                <img src="../assets/img/icons/certificate.png" alt="" srcset="" class="max-w-[70px] max-h-[70px] animate__animated animate__bounce animate__infinite infinite animate__slow">
-                <p class="text-white text-center font-[Montserrat]">Online Certificates</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <img src="../assets/img/icons/class.png" alt="" srcset="" class="max-w-[70px] max-h-[70px] animate__animated animate__bounce animate__infinite infinite animate__slow">
-                <p class="text-white text-center font-[Montserrat]">Expert Trainers</p>
-            </div>
-            <!-- <div class="flex flex-col items-center">
-                <img src="../assets/img/icons/certificate.png" alt="" srcset="" class="w-[100px] h-[100px]">
-                <p class="text-white text-center font-[Montserrat]">Online Certificates</p>
-            </div> -->
-            
-        </div>
-        <!-- find out other design elements and principles, summarise -->
-    </section>
-
-    <!-- Team -->
-    <section>
-        <div class="grid lg:grid-cols-4">
-
-        </div>
-    </section>
-
     <!-- Feedback from Parents -->
 
-    <section id="feedback" class="min-h-[100vh] p-8 relative custom-shape-divider-bottom-1692193129">
+    <section id="feedback" class="min-h-[100vh] p-8 relative custom-shape-divider-bottom-1692193129 bg-[url('../assets/img/reviewBg.png')] bg-cover">
         
         <div class="custom-shape-divider-bottom-1692193390 hidden lg:block">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -306,55 +245,71 @@
         </div>
         
 
-        <h1 class="text-center text-white text-3xl md:text-5xl font-bold font-[Montserrat]">
-            Feedback from Parents
+        <h1 class="text-center text-[color:var(--blue)] text-3xl md:text-5xl font-bold font-[Montserrat]">
+            Parents' Reviews
         </h1>
-        <p class="text-center text-white font-['Noto_Sans'] text-lg">
+        <p class="text-center text-[color:var(--orange)] font-['Open_Sans'] text-lg">
             Here’s what our students’ parents have to say
         </p>
 
-        <div class="grid lg:grid-cols-2 gap-8 items-center justify-center">
-
-            <div class="circular-slider flex-center">
-                <div class="wrapper flex-center">
-                    <li class="slides" style="--img-no:1;"><img src="../assets/img/tracks/frontend-development-tools.png" alt=""></li>
-                    <li class="slides" style="--img-no:2;"><img src="../assets/img/tracks/frontend-development-tools.png" alt=""></li>
-                    <li class="slides" style="--img-no:3"><img src="../assets/img/tracks/frontend-development-tools.png"alt=""></li>
-                    <li class="slides" style="--img-no:4"><img src="../assets/img/tracks/frontend-development-tools.png"alt=""></li>
-                    <li class="slides" style="--img-no:5"><img src="../assets/img/tracks/frontend-development-tools.png" alt=""></li>
-                </div>
-            </div>
-
-            <div class="bg-white [50%] rounded-xl flex flex-col lg:p-8 solute righ mt-20">
-           
-                <p class="font-['Noto_Sans'] lg:text-lg my-8">
-                    Fhenix Africa is a dynamic tech startup based in Akwa Ibom, Nigeria, that focuses on providing innovative digital training. 
-                    <br> <br>
-                    The company was founded in 2020 by a group of ambitious entrepreneurs with a shared vision of leveraging technology to drive positive change and economic growth in Africa.
-                </p>
-            </div>
-            
+        
             
         </div>
         
     </section>
 
-    <section class="bg-[#f4f4f4] w-[100%] min-h-[90vh] py-8" id="contact">
+    <!-- Team -->
+
+    <section class="lg:px-30 lg:py-2 px-8 min-h-[70vh] xl:px-44">
+        <h1 class="text-center text-[color:var(--blue)] text-3xl md:text-5xl font-bold font-[Montserrat] my-12 ">Meet Our Team</h1>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-14 mb-20 px-8">
+            <div class="text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
+                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover w-">
+               
+                <p class="text-center text-[color:var(--purple)] font-bold mt-4">Jane Doe</p>
+                <p class="text-center text-[color:var(--blue)] font-bold mt-4">Managing Director</p>
+                
+            </div>
+           
+            <div class="text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
+                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover">
+               
+                <p class="text-center text-[color:var(--purple)] font-bold mt-4">Jane Doe</p>
+                <p class="text-center text-[color:var(--orange)] font-bold mt-4">Managing Director</p>
+                
+            </div>
+           
+            <div class="text-white flex flex-col bg-white lg:p-8 px-2 py-2 items-center justify-center animate__animated animate__fadeInUp">
+                <img src="../assets/img/lady.png" alt="" srcset="" class="object-cover">
+               
+                <p class="text-center text-[color:var(--purple)] font-bold mt-4">Jane Doe</p>
+                <p class="text-center text-[color:var(--blue)] font-bold mt-4">Managing Director</p>
+                
+            </div>
+           
+            
+        
+            
+        </div>
+    </section>
+
+
+    <section class="bg-white w-[100%] min-h-[90vh] py-8" id="contact">
        
-        <h1 class="font-[Montserrat] text-[#FA6804] text-center font-bold md:text-5xl text-4xl">Contact Us</h1>
-        <div class="grid md:grid-cols-2 bg-[#242038] rounded-3xl w-[90%] mx-auto my-12 p-8 items-center">
+        <h1 class="font-[Montserrat] text-[color:var(--blue)] text-center font-bold md:text-5xl text-4xl">Contact Us</h1>
+        <div class="grid md:grid-cols-2 rounded-3xl w-[90%] mx-auto my-12 p-8 items-center">
            <div class="flex flex-col gap-8 p-4">
                 <div id="address">
                     <img src="../assets/img/icons/location.png" alt="" srcset="" class="w-[30px] h-[35px] object-cover">
-                    <p class="font-[Montserrat] text-white font-bold">27B Gracebill Road, Eket, Akwa Ibom State, Nigeria</p>
+                    <p class="font-[Montserrat] text-[color:var(--orange)] font-bold">27B Gracebill Road, Eket, Akwa Ibom State, Nigeria</p>
                 </div>
                 <div id="phone">
                     <img src="../assets/img/icons/phone.png" alt="" srcset="" class="w-[30px] h-[30px] object-cover">
-                    <p class="font-[Montserrat] text-white font-bold">+234 8799 932 920</p>
+                    <p class="font-[Montserrat] text-[color:var(--orange)] font-bold">+234 8799 932 920</p>
                 </div>
                 <div id="mail">
                     <img src="../assets/img/icons/mail.png" alt="" srcset="" class="w-[30px] h-[30px] object-cover">
-                    <p class="font-[Montserrat] text-white font-bold">info@fhenixafrica.com</p>
+                    <p class="font-[Montserrat] text-[color:var(--orange)] font-bold">info@fhenixafrica.com</p>
                 </div>
                 
            </div>
@@ -381,7 +336,7 @@
         </div>
     </section>
 
-    <footer class="bg-[color: var(--purple)] min-h-[50vh] lg:px-40 lg:py-20 p-4">
+    <footer class="bg-[color:var(--purple)] min-h-[50vh] lg:px-40 lg:py-20 p-4">
         <div class="text-white font-[Montserrat] max-w-[500px] text-justify">
             <h1 class="text-3xl font-bold">Fhenix Africa</h1>
             <p class="my-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque adipisci nostrum soluta repellendus nihil velit recusandae quasi ipsa, suscipit voluptatum dolore obcaecati, tenetur temporibus expedita veritatis sed perspiciatis iure laboriosam.</p>
